@@ -1,0 +1,44 @@
+h1 {
+  text-align: center;
+  color: blue;
+}
+body {
+  margin: 0%;
+  padding: 0%;
+  background: linear-gradient(to right, #007f80, #071e53);
+}
+
+h1 {
+  color: #24ffff;
+  text-align: center;
+}
+input {
+  position: absolute;
+  left: 40%;
+  right: 40%;
+  top: 10%;
+  height: 20px;
+  padding: 10px;
+}
+.robot-grid {
+  padding: 10px;
+}
+.robot-img {
+  text-align: center;
+  width: 230px;
+  height: 280px;
+  background-color: #5cbebe;
+}
+.robot-img:hover {
+  background-color: #eeb20d;
+  box-shadow: 0px 0px 0px 5px #eeb20d;
+}
+.content {
+  margin-left: 10%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px;
+  margin-top: 80px;
+  width: 80%;
+}

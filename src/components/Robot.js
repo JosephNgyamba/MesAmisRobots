@@ -21,12 +21,9 @@ export default function Robots() {
 
     fecthItem();
   }, []);
-  console.log(searchTitle);
-  console.log(
-    items.filter((element) =>
-      element.name.toLowerCase().includes(searchTitle.toLowerCase())
-    )
-  );
+  // useEffect(() => {
+   
+  // }, [searchTitle])
   return (
     <>
       <Title />
@@ -42,17 +39,14 @@ export default function Robots() {
         ) : (
           items
             .filter((element) => {
-              if (searchTitle.trim().length <= 3) {
+              if (searchTitle.trim().length <3) 
+              {
                 return element;
-              } else if (
-                element.name
-                  .toLowerCase()
-                  .includes(searchTitle.trim().toLowerCase())
-              ) {
-                return element;
-              } else {
-                return element;
-              }
+                
+              } else  { return (element.name.toLowerCase().includes(searchTitle.trim().toLowerCase()))
+                   
+                 }
+                 
             })
             .map((elt) => (
               <div

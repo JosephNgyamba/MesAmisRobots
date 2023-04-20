@@ -36,9 +36,42 @@ input {
 .content {
   margin-left: 10%;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap:wrap;
   justify-content: center;
   padding: 10px;
   margin-top: 80px;
   width: 80%;
+}
+.content-details {
+  display: flex;
+  flex-wrap:wrap;
+  flex-direction: column-reverse;
+  justify-content: center;
+  margin-top: 80px;
+  width: 100%;
+  align-items: center;
+}
+.btn-accueil{
+  color:rgb(0, 0, 0);
+  font-size:15px;
+  background-color: #ffffff;
+  width: 230px;
+  height: 50px;
+  border: none;
+}
+.btn-accueil:hover{
+  cursor: pointer;
+  background: #eeb20d;
+}
+@media only screen and (max-width: 600px){
+ 
+  .content-details {
+  display: flex;
+  flex-wrap:wrap;
+  flex-direction: column-reverse;
+  justify-content: center;
+  margin-top: 80px;
+  width: 100%;
+  align-items: center;
+}
 }

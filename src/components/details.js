@@ -21,8 +21,8 @@ function Detail() {
 
   return (
     <>
-      <div className="content">
-        <button onClick={() => Navigate("/")}>Accueil</button>
+      <div className="content-details">
+        <button onClick={() => Navigate("/")} className="btn-accueil">Accueil</button>
 
         {items.map((elt) => (
           <div

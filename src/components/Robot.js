@@ -26,13 +26,15 @@ export default function Robots() {
   // }, [searchTitle])
   return (
     <>
-      <Title />
-      <div className="content">
+    <div className="header-content">
+       <Title />
         <input
           type="text"
           placeholder="recherche par nom"
           onChange={(e) => setSearchTitle(e.target.value)}
         />
+    </div>
+      <div className="content">
 
         {loading ? (
           <h4>loading ?...</h4>

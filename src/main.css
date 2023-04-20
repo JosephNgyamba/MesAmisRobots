@@ -1,24 +1,28 @@
-h1 {
-  text-align: center;
-  color: blue;
-}
+
 body {
   margin: 0%;
   padding: 0%;
   background: linear-gradient(to right, #007f80, #071e53);
 }
-
+.header-content{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-content: center;
+  align-items: center;
+}
+h1 {
+  text-align: center;
+  color: blue;
+}
 h1 {
   color: #24ffff;
   text-align: center;
 }
 input {
-  position: absolute;
-  left: 40%;
-  right: 40%;
-  top: 10%;
   height: 20px;
   padding: 10px;
+  width: 200px;
 }
 .robot-grid {
   padding: 10px;
@@ -63,8 +67,15 @@ input {
   cursor: pointer;
   background: #eeb20d;
 }
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 768px){
  
+  .header-content{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-content: center;
+  align-items: center;
+}
   .content-details {
   display: flex;
   flex-wrap:wrap;
@@ -74,4 +85,19 @@ input {
   width: 100%;
   align-items: center;
 }
+.btn-accueil{
+  color:rgb(0, 0, 0);
+  background-color: #eeb20d;
+  width: 230px;
+  height: 50px;
+  border: none;
+}
+.btn-accueil:hover{
+  cursor: pointer;
+  background: #eeb20d;
+}
+input {
+  padding: 10px;
+  width: 200px;
+} 
 }
